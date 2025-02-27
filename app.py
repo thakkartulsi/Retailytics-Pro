@@ -85,9 +85,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
-
-
 st.markdown("<h3>🛒 Retailytics Pro - Big Mart Sales Prediction 📊</h3>", unsafe_allow_html=True)
 
 st.sidebar.header("Input Features")
@@ -105,7 +102,6 @@ Item_Type = st.sidebar.selectbox("Item Type", [
 ])
 Item_MRP = st.number_input("Item MRP", min_value=0.0, max_value=500.0, value=100.0)
 Outlet_Identifier = st.text_input("Outlet Identifier")
-# Outlet_Establishment_Year = st.date_input("Outlet Establishment Year").year
 Outlet_Establishment_Year = st.number_input(
     "Outlet Establishment Year", min_value=1985, max_value=2025, value=2000, step=1
 )
